@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>NEWSLETTER</h1>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search for headlines" />
+    <button onclick="searchNews()">SEARCH</button>
+  </div>
+</header>
+
+<nav>
+  <button onclick="changeTopic('world')">World</button>
+  <button onclick="changeTopic('politics')">Politics</button>
+  <button onclick="changeTopic('economy')">Economy</button>
+  <button onclick="changeTopic('business')">Business</button>
+  <button onclick="changeTopic('travel')">Travel</button>
+  <button onclick="changeTopic('climate')">Climate</button>
+  <button onclick="changeTopic('technology')">Tech</button>
+  <button onclick="changeTopic('sports')">Sports</button>
+</nav>
+
+<div class="container">
+  <div class="grid" id="topNews"></div>
+
+  <div class="latest">Latest News</div>
+  <div class="news-list" id="latestNews"></div>
+
+  <!-- View More button -->
+  <div class="view-more-container">
+    <button class="view-more" onclick="loadMore()">VIEW MORE</button>
+  </div>
+  <!-- Modal для просмотра новости -->
+<div id="newsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="News Image" />
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+    <p id="modalSource"></p>
+    <p id="modalDate"></p>
+    <a id="modalUrl" href="" target="_blank">Read full article</a>
+  </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <h3>NEWSLETTER</h3>
+  </div>
+  <div class="footer-center">
+    <ul class="footer-links">
+      <li>Privacy Policy</li>
+      <li>Terms of Service</li>
+      <li>Copyright Policy</li>
+      <li>Data Policy</li>
+      <li>Accessibility</li>
+      <li>Help</li>
+    </ul>
+    <p>© 2025 Newsletter, All rights reserved</p>
+  </div>
+  <div class="footer-right">
+    <div class="footer-categories">
+      <ul>
+        <li onclick="changeTopic('world')">World</li>
+        <li onclick="changeTopic('politics')">Politics</li>
+        <li onclick="changeTopic('economy')">Economy</li>
+        <li onclick="changeTopic('business')">Business</li>
+      </ul>
+      <ul>
+        <li onclick="changeTopic('travel')">Travel</li>
+        <li onclick="changeTopic('climate')">Climate</li>
+        <li onclick="changeTopic('technology')">Tech</li>
+        <li onclick="changeTopic('sports')">Sports</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
