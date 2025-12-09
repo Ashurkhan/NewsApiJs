@@ -150,3 +150,4 @@ window.onclick = function(e) {
 
 // === СТАРТ ===
 changeTopic("world"); // автоматически переведёт в general
+// FORCE NEW VERSION 2025-12-09-2
