@@ -1,6 +1,6 @@
 
 const BASE = "https://newsapi.org/v2";
-const API_KEY = "3a91e6511187446db42168d4d6eeda7e"; 
+const API_KEY = "c8f7e9d2a3b4c5d6e7f8a9b0c1d2e3f4"; 
 
 
 let currentTopic = "general";
